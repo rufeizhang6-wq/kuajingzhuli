@@ -232,17 +232,24 @@ export function StepPageClient({ path, step, stepIndex }: StepPageClientProps) {
                 <div className="rounded-xl border-2 border-green-300 bg-green-50 p-6 text-center space-y-3">
                   <p className="text-3xl">🎉</p>
                   <h3 className="text-lg font-medium text-green-800">你的店铺已经开好了！</h3>
-                  <p className="text-green-700" style={{ fontSize: "15px" }}>
-                    下一步前往「运营学堂」，学习选品上架
+                  <p className="text-sm text-green-700">
+                    下一步：查看30天行动手册，或进入运营学堂学习选品上架
                   </p>
-                  <Link
-                    href="/learn"
-                    className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-                    style={{ fontSize: "15px" }}
-                  >
-                    进入运营学堂
-                    <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
+                  <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
+                    <Link
+                      href="/learn/playbook"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                    >
+                      30天行动手册
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                    <Link
+                      href="/learn"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-muted"
+                    >
+                      运营学堂
+                    </Link>
+                  </div>
                 </div>
               </div>
             ) : (

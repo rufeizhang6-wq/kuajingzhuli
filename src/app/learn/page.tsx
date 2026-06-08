@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Package, Palette, Megaphone, Truck, BarChart3, ShieldCheck, ArrowRight } from "lucide-react";
+import { Package, Palette, Megaphone, Truck, BarChart3, ShieldCheck, CalendarCheck, ArrowRight } from "lucide-react";
 import { PageHeader } from "@/components/ui/page-header";
 import { Footer } from "@/components/layout/footer";
 import { cn } from "@/lib/utils";
@@ -17,6 +17,7 @@ const topics = [
   { icon: Truck, label: "物流发货", description: "物流方案/发货/退货处理", href: "/learn/logistics", ready: true },
   { icon: BarChart3, label: "数据运营", description: "看数据/优化/复盘方法", href: "/learn/analytics", ready: true },
   { icon: ShieldCheck, label: "合规避坑", description: "平台规则/罚款/侵权防范", href: "/learn/compliance", ready: true },
+  { icon: CalendarCheck, label: "30天行动手册", description: "开店后每天该做什么，逐日行动清单", href: "/learn/playbook", ready: true },
 ];
 
 export default function LearnPage() {

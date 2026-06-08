@@ -165,10 +165,10 @@ export function StepPageClient({ path, step, stepIndex }: StepPageClientProps) {
             </div>
           )}
 
-          {/* Placeholder for empty steps */}
+          {/* Fallback for steps with no resolved operations */}
           {resolvedOps.length === 0 && (
             <div className="rounded-xl border border-dashed border-border bg-muted/20 p-10 text-center">
-              <p style={{ fontSize: "15px", color: "#737373" }}>这一步的内容正在编写中</p>
+              <p className="text-sm text-muted-foreground">请先完成上方的选择项</p>
             </div>
           )}
 

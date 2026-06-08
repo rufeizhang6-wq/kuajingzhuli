@@ -25,7 +25,7 @@ export const tiktokUsGuide: GuidePath = {
         { text: "代办费300-800元" },
       ],
       operations: [
-        { id: "u1-0", title: "确认必须办有限公司", estimatedTime: "1分钟", type: "action", content: "美区只接受有限公司，个体工商户不能入驻。\n一个人注册有限公司 = 「自然人独资有限公司」。\n注册资本建议填10-100万（认缴制，不用实际打钱）。\n一个自然人只能设立一家一人有限公司。", confirmText: "已确认需要有限公司" },
+        { id: "u1-0", title: "确认必须办有限公司", estimatedTime: "1分钟", type: "action", content: "美区只接受有限公司，个体工商户不能入驻。\n一个人注册有限公司 = 「自然人独资有限公司」。\n注册资本建议填10-100万（认缴制，不用实际打钱）。不要填太高（如1000万），法律上你承担的责任和注册资本挂钩。\n一个自然人只能设立一家一人有限公司。\n\n⚠️ 注册地址选择（美区特别重要）：\n• 安全：独立租赁地址或真实住宅（能收信、能拍照、有水电账单）\n• 中等：集群/产业园地址（有实际办公空间但可能需要额外证明）\n• 高风险：纯虚拟挂靠地址（二审时无法提供场所照片→大概率被拒）\n\n美区TikTok注册时验证企业信息，后续二审可能要求提供经营地址证明。虚拟地址=二审失败概率大幅上升。", confirmText: "已确认需要有限公司" },
         {
           id: "u1-1", title: "选择注册方式", estimatedTime: "5分钟", type: "decision",
           options: [
@@ -155,7 +155,7 @@ export const tiktokUsGuide: GuidePath = {
         { id: "u4-3", title: "实名认证", estimatedTime: "15-30分钟", type: "action", content: "上传有限公司执照+法人身份证+银行账户。审核通常当天通过。", confirmText: "实名认证通过" },
         { id: "u4-4", title: "申请TikTok收款账户并绑定", estimatedTime: "15分钟", type: "action", content: "收款平台→申请跨境收款账户→平台选TikTok Shop→站点选美国。\n\n获取银行信息后：卖家后台→支付信息→添加结算账号→粘贴Account Number和Routing Number→Account Type选Checking Account→确认。", confirmText: "收款账户绑定成功" },
         { id: "u4-5", title: "填写W-8BEN税务表格", estimatedTime: "15分钟", type: "action", content: "极其重要！不填=每笔收入被扣24%流水（不是利润！）。\n\n卖家后台→税务设置→填写税务表格。\n有限公司选W-8BEN-E。\n\n填写：公司英文名（和注册一致）、Country选China、地址（和注册一致）。\nForeign TIN填统一社会信用代码（执照上18位数字）。\n税收协定国家选China。\n电子签名→提交。\n\nW-8BEN有效期3年，到期前后台会提醒更新。", confirmText: "W-8BEN已提交并通过" },
-        { id: "u4-6", title: "缴纳保证金", estimatedTime: "10分钟", type: "action", content: "确认：注册审核已通过 + 二审已通过或未触发 + 后台无异常提示。\n\n通过紫鸟登录后台→找到保证金入口→确认金额（$1500，约10800元，以后台显示为准）→选支付方式（支付宝/信用卡）→完成支付→截图保存凭证。\n\n保证金是押金不是费用：正常关店可退（30-90天），封店冻结至少90天。", confirmText: "保证金已缴纳，凭证已保存" },
+        { id: "u4-6", title: "缴纳保证金", estimatedTime: "10分钟", type: "action", content: "确认：注册审核已通过 + 二审已通过或未触发 + 后台无异常提示。\n\n通过紫鸟登录后台→找到保证金入口→确认金额（$1500统一，约10800元，以后台显示为准）→选支付方式（支付宝/信用卡）→完成支付→截图保存凭证。\n\n保证金是押金不是费用：正常关店可退（30-90天），封店冻结至少90天。\n\n⚠️ 2026年新情况：多位卖家反馈，封店后90天到期资金仍未解冻，直接变为永久冻结。做好最坏打算：保证金$1500可能是沉没成本。不要在店铺稳定之前大量注册多个店铺。", confirmText: "保证金已缴纳，凭证已保存" },
       ],
       warnings: [
         "W-8BEN不填=每笔收入被扣24%流水——最容易被遗忘的致命步骤",

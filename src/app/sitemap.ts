@@ -30,12 +30,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/learn/logistics`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/learn/analytics`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/learn/compliance`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    // Tools
+    // Tools (14)
     { url: `${BASE_URL}/tools`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/tools/profit-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/ad-roi-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/startup-cost-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/fba-storage`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/tools/shipping-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/tools/duty-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${BASE_URL}/tools/pricing-advisor`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/dimensional-weight`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/inventory-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/payment-cycle`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/fee-comparison`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/compliance-checker`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/penalty-simulator`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/tools/payment-providers`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   ];
 
   const guideStepPages = [temuGuide, tiktokSeaGuide, shopeeGuide, tiktokUsGuide, amazonGuide].flatMap(
